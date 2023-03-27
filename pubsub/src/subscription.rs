@@ -133,7 +133,7 @@ pub struct Subscription {
 }
 
 impl Subscription {
-    pub(crate) fn new(fqsn: String, subc: SubscriberClient) -> Self {
+    pub fn new(fqsn: String, subc: SubscriberClient) -> Self {
         Self { fqsn, subc }
     }
 
